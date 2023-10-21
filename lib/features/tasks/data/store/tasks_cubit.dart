@@ -40,7 +40,6 @@ class TasksCubit extends Cubit<TasksState> {
       }
 
       else if(taskEvent.action == TaskBroadcastAction.remove){
-        final copiedTasks = [...state.tasks];
         copiedTasks.removeWhere((element) => element.id == taskEvent.task!.id);
       }
 
@@ -135,6 +134,7 @@ class TasksCubit extends Cubit<TasksState> {
 
     // optimistic update for faster User experience
     emit(state.copyWith(status: TasksStatus.removeTaskInProgress));
+
     tasksBroadcastRepository.removeTask(task: task);
 
     final either = await tasksRepository.removeTask(task);
