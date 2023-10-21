@@ -91,7 +91,7 @@ class _ManageTaskPageState extends State<ManageTaskPage> with FormMixin {
         appBar: AppBar(
           elevation: 0,
           iconTheme: IconThemeData(color: theme.colorScheme.onBackground),
-          title: Text("Add list item", style: theme.textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.bold),),
+          title: Text("${widget.task == null ? 'Add' : 'Update'} list item", style: theme.textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.bold),),
           bottom: const PreferredSize(preferredSize: Size.fromHeight(1), child: CustomBorderWidget(),),
           actions: [
             BlocConsumer<TasksCubit, TasksState>(
