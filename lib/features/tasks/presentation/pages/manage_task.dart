@@ -101,7 +101,7 @@ class _ManageTaskPageState extends State<ManageTaskPage> with FormMixin {
                   return IconButton(onPressed: () => {}, icon: const CircularProgressIndicator(color: kAppBlue, strokeWidth: 2,));
                 }
                 return TextButton(onPressed: () => handleSubmit(context), child:
-                Text("Save", style: theme.textTheme.bodyMedium?.copyWith(color: kAppBlue),
+                Text("Save", style: theme.textTheme.bodyMedium?.copyWith(color: kAppBlue, fontWeight: FontWeight.bold),
                 )
                 );
               },

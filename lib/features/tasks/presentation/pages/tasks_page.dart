@@ -146,7 +146,7 @@ class _TasksPageState extends State<TasksPage> {
                           title: Text(
                             task.name ?? '',
                             style: theme.textTheme.bodyMedium?.copyWith(
-                                fontSize: 20,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w600,
                                 letterSpacing: 0.5,
                                 decoration: task.completed ? TextDecoration.lineThrough : null,
