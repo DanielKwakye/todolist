@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "192940480286",
+    "project_id": "invennico-todo-list-app",
+    "storage_bucket": "invennico-todo-list-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192940480286:android:ea86613fd2b605bc845b0f",
+        "android_client_info": {
+          "package_name": "com.example.todolist.todolist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHUb0mzSOCnBPq1MAWM4nCWuQnJ0z72BE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
