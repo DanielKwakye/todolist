@@ -1,9 +1,18 @@
 # INVENNICO MOBILE CHALLENGE
 
-Todo list app
+Todo list app (Tools)
 
 - State management: Bloc (Cubit)
 - Local database: Hive
+- Firebase authentication
+
+Features
+- Add task
+- Remove task
+- Update task
+- Mark task as completed
+- Dark mode and light mode
+- Task persited in local db
 - Firebase authentication
 
 ## Getting Started
