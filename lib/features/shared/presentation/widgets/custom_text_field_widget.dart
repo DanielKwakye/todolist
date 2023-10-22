@@ -25,6 +25,7 @@ class CustomTextFieldWidget extends StatefulWidget {
   final Widget? suffix;
   final TextCapitalization textCapitalization;
   final bool showLabel;
+  final Function(String)? onFieldSubmitted;
 
 
   const CustomTextFieldWidget({Key? key,
@@ -50,7 +51,9 @@ class CustomTextFieldWidget extends StatefulWidget {
     this.errorText,
     this.suffix,
     this.textCapitalization = TextCapitalization.sentences,
-    this.showLabel = true
+    this.showLabel = true,
+    this.onFieldSubmitted
+
   }) : super(key: key);
 
   @override
@@ -96,6 +99,7 @@ class _CustomTextFieldWidgetState extends State<CustomTextFieldWidget> {
             onSaved:  widget.onSaved,
             onChanged: widget.onChange,
             cursorColor: theme.colorScheme.onPrimary.withOpacity(0.5),
+            onFieldSubmitted: widget.onFieldSubmitted,
             style: TextStyle(color: theme.colorScheme.onBackground),
             textAlign: TextAlign.left,
             decoration: InputDecoration(

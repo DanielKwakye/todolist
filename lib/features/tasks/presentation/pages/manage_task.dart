@@ -113,12 +113,14 @@ class _ManageTaskPageState extends State<ManageTaskPage> with FormMixin {
           child: Column(
              children: [
                CustomTextFieldWidget(
-                 label: 'Task name',
-                 controller: nameController,
-                 inputType: TextInputType.emailAddress,
-                 validator: isRequired,
-                 placeHolder: 'Enter task name here',
-               ),
+                  label: 'Task name',
+                  controller: nameController,
+                  inputType: TextInputType.text,
+                  textCapitalization: TextCapitalization.sentences,
+                  validator: isRequired,
+                  placeHolder: 'Enter task name here',
+                  // onFieldSubmitted: (_) => handleSubmit(ctx),
+                )
              ],
           ),
         ),

@@ -63,6 +63,9 @@ class AuthRepository {
       } else if (e.code == 'wrong-password') {
         debugPrint('Wrong password provided for that user.');
         return const Left("Wrong password provided for that user.");
+      } else if (e.code == 'INVALID_LOGIN_CREDENTIALS') {
+        debugPrint('Invalid login credentials');
+        return const Left("Invalid credentials. Login failed!");
       }
       return Left(e.toString());
 
