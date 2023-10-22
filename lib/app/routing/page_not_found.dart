@@ -31,7 +31,7 @@ class PageNotFound extends StatelessWidget with LaunchExternalAppMixin {
               children: <Widget>[
                 Text("Page Not Found", style: theme.textTheme.titleLarge,),
                 const SizedBox(height: 20,),
-                 Text("Sorry!. The page you're looking for cannot be found.  Kindly report to the Showwcase Team",
+                 Text("Sorry!. The page you're looking for cannot be found.  Kindly report to the Team",
                   textAlign: TextAlign.center,
                   style: TextStyle(color: theme.colorScheme.onBackground),),
                   const SizedBox(height: 20,),
