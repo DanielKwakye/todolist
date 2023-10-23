@@ -302,7 +302,7 @@ Future<bool> isNetworkConnected () async {
     return false;
   } else if (connectivityResult == ConnectivityResult.other) {
     // I am connected to a network which is not in the above mentioned networks.
-    return false;
+    return true;
   } else if (connectivityResult == ConnectivityResult.none) {
     // I am not connected to any network.
     return false;
